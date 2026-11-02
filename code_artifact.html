@@ -1,0 +1,1255 @@
+<!-- 2. Virtual Studio & Background Environment -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-obsidian-900/80 p-3.5 rounded-2xl border border-white/10">
+          <div>
+            <label for="selectVirtualStudio" class="block text-xs font-bold text-slate-200 mb-1.5">🏛️ الخلفية / مسرح الأحداث الافتراضي (2.5D Sets):</label>
+            <select id="selectVirtualStudio" class="w-full bg-obsidian-950 border border-white/15 rounded-xl px-3 py-2 text-xs text-white font-bold focus:border-gold-500 focus:outline-none">
+              <option value="auto_scene_set" selected>🎭 تلقائي ذكي حسب المشهد (محكمة / مكتب محاماة / كمين مباحث)</option>
+              <option value="courtroom_stage">⚖️ مسرح قاعة المحكمة (منصة القضاء + قفص الاتهام + منصة الدفاع)</option>
+              <option value="law_office_stage">📚 مسرح مكتب المحامي (مكتب كلاسيكي + مصباح أخضر + موسوعة القوانين)</option>
+              <option value="police_checkpoint_stage">🚓 مسرح كمين المباحث والقسم (رادار جنائي + إضاءة أمنية + حواجز)</option>
+              <option value="obsidian_glow">🌑 خلفية داكنة بوهج ذهبي (كلاسيكي)</option>
+              <option value="luxury_office">🪵 مكتب محاماة خشبي دافئ</option>
+              <option value="executive_studio">🏢 مكتب تنفيذي عصري مضيء</option>
+              <option value="city_night">🌃 إطلالة بانورامية ليلية على المدينة</option>
+              <option value="motion_circles">⭕ دوائر وهالات موشن متحركة (ستايل ريلازاتك)</option>
+              <option value="crimson_alert">🚨 استوديو جنائي أحمر/أزرق لمشاهد المباحث</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="selectSpeakerVideoMode" class="block text-xs font-bold text-slate-200 mb-1.5">🎥 وضع عرض الفيديو الشخصي (عند رفع ملف فيديو):</label>
+            <select id="selectSpeakerVideoMode" class="w-full bg-obsidian-950 border border-white/15 rounded-xl px-3 py-2 text-xs text-white font-bold focus:border-gold-500 focus:outline-none">
+              <option value="split_circle" selected>👤 إطار دائري أنيق للمتحدث + مشاهد موشن وستيك مان</option>
+              <option value="split_bottom">📺 تقسيم الشاشة (المتحدث بالأسفل + الرسومات بالأعلى)</option>
+              <option value="full_studio">🎬 المتحدث داخل الاستوديو الافتراضي + ترجمة أسفل الذقن</option>
+              <option value="audio_only">🎙️ استخدام صوت الفيديو فقط مع رسومات الـ Stickman</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 3. Flame Transitions & Sound Effects Toggles -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-obsidian-900/80 p-3.5 rounded-2xl border border-white/10">
+          <label class="flex items-start gap-2.5 cursor-pointer p-2 rounded-xl bg-obsidian-950/70 border border-white/5 hover:border-gold-500/30 transition">
+            <input id="chkFlameTransitions" type="checkbox" checked class="mt-1 rounded accent-gold-500 w-4 h-4" />
+            <div>
+              <div class="text-xs font-extrabold text-amber-300">🔥 تفعيل انتقالات اللهب والوميض (Flame Transitions)</div>
+              <div class="text-[10px] text-slate-400">تأثير لهب ناري سينمائي يشتعل بسلاسة عند الانتقال بين كل مشهد وآخر لجذب عين المشاهد.</div>
+            </div>
+          </label>
+
+          <label class="flex items-start gap-2.5 cursor-pointer p-2 rounded-xl bg-obsidian-950/70 border border-white/5 hover:border-gold-500/30 transition">
+            <input id="chkAutoSfx" type="checkbox" checked class="mt-1 rounded accent-gold-500 w-4 h-4" />
+            <div>
+              <div class="text-xs font-extrabold text-emerald-300">🔊 مؤثرات صوتية قانونية تلقائية (مطرقة / كلبشات / سرينة / ختم)</div>
+              <div class="text-[10px] text-slate-400">توليد مؤثرات صوتية واقعية حسب سياق كل مشهد (قضاء، قبض، مستندات، وانتقالات).</div>
+            </div>
+          </label>
+        </div>
+
+        <!-- 4. NEW AI-Trends 2D Studio Engine Controls (Rig2D + FX2D + UI2D) -->
+        <div class="bg-gradient-to-r from-amber-500/10 via-purple-500/10 to-emerald-500/10 p-3.5 rounded-2xl border border-gold-500/30 space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-black text-gold-400 flex items-center gap-1.5">
+              <span>🎬</span>
+              <span>محرك الأنيميشن المتقدم (Rig2D + FX2D + UI2D Studio)</span>
+            </div>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold-500/20 text-gold-300 font-bold">الجزء الأول</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            <label class="flex items-start gap-2 cursor-pointer p-2.5 rounded-xl bg-obsidian-950/80 border border-white/10 hover:border-gold-500/40 transition">
+              <input id="chkLipSync" type="checkbox" checked class="mt-0.5 rounded accent-gold-500 w-4 h-4" />
+              <div>
+                <div class="text-xs font-extrabold text-white">🗣️ تحريك المفاصل والشفاه (Rig2D & Lip-Sync)</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">مفاصل كوع وركبة واقعية + تنفس ورمش + حركة فم متزامنة مع الصوت.</div>
+              </div>
+            </label>
+
+            <label class="flex items-start gap-2 cursor-pointer p-2.5 rounded-xl bg-obsidian-950/80 border border-white/10 hover:border-gold-500/40 transition">
+              <input id="chkCameraZoom" type="checkbox" checked class="mt-0.5 rounded accent-gold-500 w-4 h-4" />
+              <div>
+                <div class="text-xs font-extrabold text-sky-300">🎥 زوم سينمائي وكاميرا (2.5D Camera)</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">تقريب الكاميرا تلقائياً في مشاهد العقوبات، القبض، والأحكام القضائية.</div>
+              </div>
+            </label>
+
+            <label class="flex items-start gap-2 cursor-pointer p-2.5 rounded-xl bg-obsidian-950/80 border border-white/10 hover:border-gold-500/40 transition">
+              <input id="chkCourtStamp" type="checkbox" checked class="mt-0.5 rounded accent-gold-500 w-4 h-4" />
+              <div>
+                <div class="text-xs font-extrabold text-red-300">💮 ختم المحكمة واهتزاز الشاشة (UI2D Stamp)</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">ختم قضائي متفاعل مع ذرات غبار واهتزاز الكاميرا عند طرق المطرقة.</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- 5. NEW Procedural Sound Design, Background Music & Auto-Ducking Mixer (audio/sfx.py + music.py + mix.py) -->
+        <div class="bg-obsidian-900/90 p-3.5 rounded-2xl border border-emerald-500/30 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="text-xs font-black text-emerald-300 flex items-center gap-1.5">
+              <span>🎵</span>
+              <span>مهندس الصوت التلقائي: الموسيقى الخلفية + الخفض الذكي (Auto-Ducking) + بنك المؤثرات</span>
+            </div>
+            <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold">الجزء الثاني (بدون حقوق طبع)</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div>
+              <label for="selectBgMusicStyle" class="block text-[11px] font-bold text-slate-300 mb-1">🎼 نوع الموسيقى التصويرية الخلفية:</label>
+              <select id="selectBgMusicStyle" class="w-full bg-obsidian-950 border border-white/15 rounded-xl px-2.5 py-2 text-xs text-white font-bold focus:border-gold-500 focus:outline-none">
+                <option value="legal_warm" selected>🎻 خلفية قانونية دافئة ورصينة (Legal Pad)</option>
+                <option value="crime_pulse">🚨 نبض تشويق جنائي ومباحث (Crime Tension)</option>
+                <option value="doc_ambient">🌌 خلفية وثائقية عميقة وهادئة (Documentary)</option>
+                <option value="none">🔇 بدون موسيقى خلفية (صوت المتحدث فقط)</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-[11px] mb-1">
+                <label for="sliderBgMusicVol" class="font-bold text-slate-300">🔊 مستوى صوت الموسيقى الخلفية:</label>
+                <span id="valBgMusicVol" class="text-gold-400 font-bold font-inter">22%</span>
+              </div>
+              <input id="sliderBgMusicVol" type="range" min="0" max="60" value="22" class="w-full h-1.5 bg-obsidian-700 rounded-lg cursor-pointer mt-1.5" />
+              <p class="text-[10px] text-slate-400 mt-1">تُدمج تلقائياً في المعاينة وفي تصدير الـ MP4.</p>
+            </div>
+
+            <label class="flex items-start gap-2 cursor-pointer p-2.5 rounded-xl bg-obsidian-950/80 border border-white/10 hover:border-emerald-500/40 transition">
+              <input id="chkAutoDucking" type="checkbox" checked class="mt-0.5 rounded accent-gold-500 w-4 h-4" />
+              <div>
+                <div class="text-xs font-extrabold text-emerald-300">🎚️ الخفض الذكي للموسيقى (Auto-Ducking)</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">يخفض الموسيقى 70% تلقائياً لحظة نطقك للكلام ويرفعها في الوقفات.</div>
+              </div>
+            </label>
+          </div>
+
+          <!-- Instant Legal SFX Preview & Trigger Bar -->
+          <div class="pt-2 border-t border-white/10 flex flex-wrap items-center justify-between gap-2">
+            <span class="text-[11px] font-bold text-slate-300">🔔 معاينة بنك المؤثرات الصوتية القانونية (تعمل تلقائياً داخل المشاهد):</span>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <button type="button" data-sfx="gavel" class="sfx-test-btn px-2.5 py-1 rounded-lg bg-obsidian-950 hover:bg-gold-500/20 text-gold-300 border border-gold-500/30 text-[11px] font-bold transition">
+                🔨 مطرقة القاضي
+              </button>
+              <button type="button" data-sfx="handcuffs" class="sfx-test-btn px-2.5 py-1 rounded-lg bg-obsidian-950 hover:bg-red-500/20 text-red-300 border border-red-500/30 text-[11px] font-bold transition">
+                ⛓️ قفل الكلبشات
+              </button>
+              <button type="button" data-sfx="siren" class="sfx-test-btn px-2.5 py-1 rounded-lg bg-obsidian-950 hover:bg-sky-500/20 text-sky-300 border border-sky-500/30 text-[11px] font-bold transition">
+                🚨 سرينة المباحث
+              </button>
+              <button type="button" data-sfx="stamp" class="sfx-test-btn px-2.5 py-1 rounded-lg bg-obsidian-950 hover:bg-purple-500/20 text-purple-300 border border-purple-500/30 text-[11px] font-bold transition">
+                💮 ختم المحكمة
+              </button>
+              <button type="button" data-sfx="whoosh" class="sfx-test-btn px-2.5 py-1 rounded-lg bg-obsidian-950 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[11px] font-bold transition">
+                🔥 انتقال لهب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+    let activeSourceNode = null;
+    let usePurifiedAudio = true;
+    let audioStartTimeOffset = 0;
+    let audioContextPlayTimestamp = 0;
+    let activeBgMusicController = null;
+    let activeExportDestinationNode = null;
+
+    // DOM Elements
+    const reelCanvas = document.getElementById('reelCanvas');
+    const ctx = reelCanvas.getContext('2d');
+    const waveformCanvas = document.getElementById('waveformCanvas');
+    const waveCtx = waveformCanvas.getContext('2d');
+
+    // =========================================================================
+    // 2. TOAST NOTIFICATION HELPER (NO BLOCKED DIALOGS)
+    // =========================================================================
+    let toastTimer = null;
+    function showToast(msg, icon = '✨') {
+      const box = document.getElementById('toastBox');
+      document.getElementById('toastIcon').textContent = icon;
+      document.getElementById('toastMessage').textContent = msg;
+      box.classList.remove('hidden');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        box.classList.add('hidden');
+      }, 4200);
+    }
+
+    /**
+     * Renders the Dual Waveform Comparison Canvas (Original Gray vs Purified Emerald/Gold + Playhead)
+     */
+    function drawWaveformComparison() {
+      if (!waveformCanvas || !waveCtx) return;
+      const W = waveformCanvas.width;
+      const H = waveformCanvas.height;
+      const midY = H / 2;
+
+      waveCtx.clearRect(0, 0, W, H);
+      waveCtx.fillStyle = '#0b0b12';
+      waveCtx.fillRect(0, 0, W, H);
+
+      // Center zero-crossing reference line
+      waveCtx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+      waveCtx.lineWidth = 1;
+      waveCtx.beginPath();
+      waveCtx.moveTo(0, midY);
+      waveCtx.lineTo(W, midY);
+      waveCtx.stroke();
+
+      const bars = 140;
+      const barW = Math.max(2, (W / bars) - 1.5);
+
+      if (!originalAudioBuffer) {
+        // Simulated decorative preview waveform before upload
+        for (let i = 0; i < bars; i++) {
+          const x = (i / bars) * W;
+          const env = Math.abs(Math.sin(i * 0.19) * Math.cos(i * 0.07));
+          const origH = Math.max(6, (env * 0.72 + 0.14) * (H * 0.44));
+          const cleanH = Math.max(2, (env > 0.18 ? env * 0.86 : 0.02) * (H * 0.44));
+
+          waveCtx.fillStyle = 'rgba(148, 163, 184, 0.32)';
+          waveCtx.fillRect(x, midY - origH, barW, origH * 2);
+
+          waveCtx.fillStyle = usePurifiedAudio ? 'rgba(75, 210, 140, 0.85)' : 'rgba(245, 166, 35, 0.75)';
+          waveCtx.fillRect(x, midY - cleanH, barW, cleanH * 2);
+        }
+      } else {
+        const origData = originalAudioBuffer.getChannelData(0);
+        const cleanData = (purifiedAudioBuffer || originalAudioBuffer).getChannelData(0);
+        const stepOrig = Math.max(1, Math.floor(origData.length / bars));
+        const stepClean = Math.max(1, Math.floor(cleanData.length / bars));
+
+        for (let i = 0; i < bars; i++) {
+          const x = (i / bars) * W;
+          let peakOrig = 0;
+          const startO = i * stepOrig;
+          for (let j = 0; j < stepOrig; j += 16) {
+            const v = Math.abs(origData[startO + j] || 0);
+            if (v > peakOrig) peakOrig = v;
+          }
+
+          let peakClean = 0;
+          const startC = i * stepClean;
+          for (let j = 0; j < stepClean; j += 16) {
+            const v = Math.abs(cleanData[startC + j] || 0);
+            if (v > peakClean) peakClean = v;
+          }
+
+          const origH = Math.max(2, peakOrig * (H * 0.45));
+          const cleanH = Math.max(1.5, peakClean * (H * 0.45));
+
+          waveCtx.fillStyle = 'rgba(148, 163, 184, 0.35)';
+          waveCtx.fillRect(x, midY - origH, barW, origH * 2);
+
+          waveCtx.fillStyle = usePurifiedAudio ? 'rgba(75, 210, 140, 0.88)' : 'rgba(245, 166, 35, 0.85)';
+          waveCtx.fillRect(x, midY - cleanH, barW, cleanH * 2);
+        }
+      }
+
+      // Draw Playhead Position Indicator
+      const prog = Math.max(0, Math.min(1, currentTime / Math.max(1, totalDuration)));
+      const playX = prog * W;
+      waveCtx.strokeStyle = '#F5A623';
+      waveCtx.lineWidth = 2.2;
+      waveCtx.beginPath();
+      waveCtx.moveTo(playX, 0);
+      waveCtx.lineTo(playX, H);
+      waveCtx.stroke();
+    }
+      return outBuf;
+    }
+
+    /**
+     * Synthesizes realistic context-aware Legal & Criminal Sound Effects (`audio/sfx.py` from aitrends-2d-studio)
+     * Supports: 'gavel' (مطرقة القاضي), 'handcuffs' (قفل الكلبشات والزنزانة), 'siren' (سرينة المباحث),
+     *           'stamp' (ختم المحكمة), and 'whoosh' (انتقال اللهب).
+     */
+    let lastTriggeredSceneIdx = -1;
+    function playProceduralLegalSFX(sfxType = 'whoosh', customDest = null) {
+      try {
+        const actx = ensureAudioContext();
+        const now = actx.currentTime;
+        const outDest = customDest || activeExportDestinationNode;
+
+        const connectOut = (node) => {
+          node.connect(actx.destination);
+          if (outDest) {
+            try { node.connect(outDest); } catch (e) {}
+          }
+        };
+
+        if (sfxType === 'gavel') {
+          // Double Judicial Wooden Gavel Rap ("طرق مطرقة القاضي")
+          [0, 0.19].forEach((delay) => {
+            const osc = actx.createOscillator();
+            const gain = actx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(195, now + delay);
+            osc.frequency.exponentialRampToValueAtTime(48, now + delay + 0.09);
+            gain.gain.setValueAtTime(0.28, now + delay);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + delay + 0.11);
+            osc.connect(gain);
+            connectOut(gain);
+            osc.start(now + delay);
+            osc.stop(now + delay + 0.12);
+          });
+        } else if (sfxType === 'handcuffs') {
+          // Metallic Ratchet & Cell Lock Clank ("قفل الكلبشات والزنزانة")
+          [0, 0.07, 0.15].forEach((delay, idx) => {
+            const osc = actx.createOscillator();
+            const gain = actx.createGain();
+            osc.type = 'square';
+            osc.frequency.setValueAtTime(980 + idx * 260, now + delay);
+            osc.frequency.exponentialRampToValueAtTime(340, now + delay + 0.055);
+            gain.gain.setValueAtTime(0.12, now + delay);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + delay + 0.06);
+            osc.connect(gain);
+            connectOut(gain);
+            osc.start(now + delay);
+            osc.stop(now + delay + 0.065);
+          });
+        } else if (sfxType === 'siren') {
+          // Short Egyptian Police Mabahith Siren Whoop ("سرينة المباحث")
+          const osc = actx.createOscillator();
+          const gain = actx.createGain();
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(520, now);
+          osc.frequency.linearRampToValueAtTime(1080, now + 0.24);
+          osc.frequency.linearRampToValueAtTime(580, now + 0.42);
+          gain.gain.setValueAtTime(0.09, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.44);
+          osc.connect(gain);
+          connectOut(gain);
+          osc.start(now);
+          osc.stop(now + 0.45);
+        } else if (sfxType === 'stamp') {
+          // Heavy Court Stamp Thud + Crisp Paper Impact ("ختم المحكمة")
+          const osc = actx.createOscillator();
+          const gain = actx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(135, now);
+          osc.frequency.exponentialRampToValueAtTime(32, now + 0.18);
+          gain.gain.setValueAtTime(0.25, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.20);
+          osc.connect(gain);
+          connectOut(gain);
+          osc.start(now);
+          osc.stop(now + 0.21);
+        } else {
+          // Cinematic Flame Whoosh Transition
+          const osc = actx.createOscillator();
+          const gain = actx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(190, now);
+          osc.frequency.exponentialRampToValueAtTime(44, now + 0.17);
+          gain.gain.setValueAtTime(0.09, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+          osc.connect(gain);
+          connectOut(gain);
+          osc.start(now);
+          osc.stop(now + 0.19);
+        }
+      } catch (e) {}
+    }
+
+    function triggerSceneTransitionSFX(sceneIdx, isFirstScene = false) {
+      const sfxCheck = document.getElementById('chkAutoSfx');
+      if (!sfxCheck || !sfxCheck.checked || !isPlaying) return;
+      const sc = scenes[sceneIdx];
+      const sType = sc?.type || '';
+
+      if (['s10_egyptian_law', 's13_repeat_offense', 's18_go_to_court', 's21_victory_justice', 's26_judge_and_lawyer'].includes(sType)) {
+        playProceduralLegalSFX('gavel');
+      } else if (['s12_prison_or_fine', 's14_one_year_prison', 's24_detective_arrest'].includes(sType)) {
+        playProceduralLegalSFX('handcuffs');
+      } else if (['s23_police_car_siren', 's28_suspect_escape_chase', 's29_cyber_phone_blackmail'].includes(sType)) {
+        playProceduralLegalSFX('siren');
+      } else if (['s05_legal_right', 's09_inheritance_deed', 's19_file_lawsuit', 's20_hide_docs', 's31_bounced_check_bank'].includes(sType)) {
+        playProceduralLegalSFX('stamp');
+      } else {
+        playProceduralLegalSFX(isFirstScene ? 'stamp' : 'whoosh');
+      }
+    }
+
+    /**
+     * Procedural Background Music & Smart Auto-Ducking Mixer (`audio/music.py` + `audio/mix.py`)
+     * Generates copyright-free ambient legal harmonies and automatically ducks volume when speaking.
+     */
+    function startProceduralBgMusic(customDestinationNode = null) {
+      stopProceduralBgMusic();
+      const style = document.getElementById('selectBgMusicStyle')?.value || 'legal_warm';
+      const volPct = parseFloat(document.getElementById('sliderBgMusicVol')?.value) || 0;
+      if (style === 'none' || volPct <= 0) return;
+
+      try {
+        const actx = ensureAudioContext();
+        const masterGain = actx.createGain();
+        const baseGainVal = (volPct / 100) * 0.18;
+        masterGain.gain.setValueAtTime(baseGainVal, actx.currentTime);
+
+        const lowpass = actx.createBiquadFilter();
+        lowpass.type = 'lowpass';
+        lowpass.frequency.value = style === 'crime_pulse' ? 920 : 620;
+
+        lowpass.connect(masterGain);
+        masterGain.connect(actx.destination);
+        if (customDestinationNode) {
+          masterGain.connect(customDestinationNode);
+        }
+
+        // Chord frequencies (D Minor 9th for Legal Warmth, C Minor Tension for Crime, A Minor Ambient for Documentary)
+        let freqs = [146.83, 220.0, 261.63, 329.63]; // D3, A3, C4, E4
+        if (style === 'crime_pulse') {
+          freqs = [130.81, 196.0, 233.08, 311.13]; // C3, G3, Bb3, Eb4
+        } else if (style === 'doc_ambient') {
+          freqs = [110.0, 164.81, 220.0, 246.94]; // A2, E3, A3, B3
+        }
+
+        const oscs = freqs.map((f, idx) => {
+          const osc = actx.createOscillator();
+          const oscGain = actx.createGain();
+          osc.type = idx === 0 ? 'triangle' : 'sine';
+          osc.frequency.value = f;
+          oscGain.gain.value = idx === 0 ? 0.42 : 0.19;
+          osc.connect(oscGain);
+          oscGain.connect(lowpass);
+          osc.start();
+          return osc;
+        });
+
+        // Subtle rhythmic pulse LFO on filter frequency
+        const lfo = actx.createOscillator();
+        const lfoGain = actx.createGain();
+        lfo.type = 'sine';
+        lfo.frequency.value = style === 'crime_pulse' ? 2.2 : 0.35;
+        lfoGain.gain.value = style === 'crime_pulse' ? 280 : 120;
+        lfo.connect(lfoGain);
+        lfoGain.connect(lowpass.frequency);
+        lfo.start();
+
+        activeBgMusicController = {
+          masterGain,
+          baseGainVal,
+          oscs: [...oscs, lfo]
+        };
+      } catch (e) {}
+    }
+
+    function updateBgMusicAutoDucking(tSec) {
+      if (!activeBgMusicController || !audioCtx) return;
+      const volPct = parseFloat(document.getElementById('sliderBgMusicVol')?.value) || 0;
+      const baseGainVal = (volPct / 100) * 0.18;
+      const autoDuck = document.getElementById('chkAutoDucking')?.checked ?? true;
+      const voiceAmp = getVoiceAmplitudeAtTime(tSec);
+
+      // Lower music volume by up to 72% when voice is active (Auto-Ducking)
+      const duckFactor = autoDuck && voiceAmp > 0.15 ? Math.max(0.28, 1.0 - voiceAmp * 0.72) : 1.0;
+      const targetGain = baseGainVal * duckFactor;
+      activeBgMusicController.masterGain.gain.setTargetAtTime(targetGain, audioCtx.currentTime, 0.08);
+    }
+
+    function stopProceduralBgMusic() {
+      if (!activeBgMusicController) return;
+      try {
+        activeBgMusicController.oscs.forEach((o) => {
+          try { o.stop(); o.disconnect(); } catch (e) {}
+        });
+        activeBgMusicController.masterGain.disconnect();
+      } catch (e) {}
+      activeBgMusicController = null;
+    }
+          EOF
+
+          npm install
+          npx cap init "LegalReelsStudio" "com.qanony.reelsstudio" --web-dir www
+          npx cap add android
+
+          MANIFEST="android/app/src/main/AndroidManifest.xml"
+          sed -i 's|<application|<uses-permission android:name="android.permission.RECORD_AUDIO" />\n    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />\n    <application|g' "$MANIFEST"
+
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - name: Upload Ready APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: LegalReelsStudio-Android-APK
+          path: android/app/build/outputs/apk/debug/app-debug.apk</textarea>
+      </div>
+<!-- ... existing code ... -->
+    function drawRoundedRect(ctx, x, y, w, h, r) {
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.arcTo(x + w, y, x + w, y + h, r);
+      ctx.arcTo(x + w, y + h, x, y + h, r);
+      ctx.arcTo(x, y + h, x, y, r);
+      ctx.arcTo(x, y, x + w, y, r);
+      ctx.closePath();
+    }
+
+    /**
+     * Real-time Voice Envelope Sampler for Rig2D Lip-Sync
+     */
+    function getVoiceAmplitudeAtTime(tSec) {
+      const buf = usePurifiedAudio && purifiedAudioBuffer ? purifiedAudioBuffer : originalAudioBuffer;
+      if (!buf) {
+        // Simulated natural speech cadence when in preview/simulation mode
+        const wave = Math.sin(tSec * 16) * 0.5 + Math.sin(tSec * 27) * 0.35 + Math.cos(tSec * 9) * 0.25;
+        return Math.max(0, Math.min(1, Math.abs(wave)));
+      }
+      const ch = buf.getChannelData(0);
+      const sr = buf.sampleRate;
+      const centerSample = Math.floor(tSec * sr);
+      const halfWin = Math.floor(sr * 0.018);
+      const start = Math.max(0, centerSample - halfWin);
+      const end = Math.min(ch.length, centerSample + halfWin);
+      if (end <= start) return 0;
+      let sum = 0;
+      for (let i = start; i < end; i += 4) {
+        sum += ch[i] * ch[i];
+      }
+      const count = Math.max(1, Math.ceil((end - start) / 4));
+      const rms = Math.sqrt(sum / count);
+      return Math.max(0, Math.min(1, rms * 5.2));
+    }
+
+    /**
+     * 2-Bone Inverse Kinematics Solver (Rig2D Shoulder->Elbow->Wrist & Hip->Knee->Ankle)
+     */
+    function solveTwoBoneIK(rootX, rootY, targetX, targetY, len1, len2, bendDir = 1) {
+      const dx = targetX - rootX;
+      const dy = targetY - rootY;
+      const maxReach = len1 + len2 - 0.5;
+      const dist = Math.max(1, Math.min(maxReach, Math.hypot(dx, dy)));
+      const baseAngle = Math.atan2(dy, dx);
+      const cosAngle1 = Math.max(-1, Math.min(1, (len1 * len1 + dist * dist - len2 * len2) / (2 * len1 * dist)));
+      const angle1 = baseAngle + bendDir * Math.acos(cosAngle1);
+      const midX = rootX + Math.cos(angle1) * len1;
+      const midY = rootY + Math.sin(angle1) * len1;
+      const endX = rootX + (dx / Math.max(1, Math.hypot(dx, dy))) * dist;
+      const endY = rootY + (dy / Math.max(1, Math.hypot(dx, dy))) * dist;
+      return { midX, midY, endX, endY };
+    }
+
+    /**
+     * Upgraded Rig2D Skeletal Character Renderer with Joint Articulation, Breathing, Blinking & Lip-Sync
+     */
+    function drawStickman(ctx, x, yGround, opts = {}) {
+      const scale = opts.scale ?? 1.0;
+      const mood = opts.mood ?? 'smile';
+      const armL = opts.armL ?? [-38, 75];
+      const armR = opts.armR ?? [38, 75];
+      const female = opts.female ?? false;
+      const walkPhase = opts.walkPhase ?? 0.0;
+      const alpha = opts.alpha ?? 1.0;
+      const glowHeart = opts.glowHeart ?? false;
+      const role = opts.role || 'auto';
+
+      const rigEnabled = document.getElementById('chkLipSync')?.checked ?? true;
+      const tNow = currentTime || 0;
+      const breathOffset = rigEnabled ? Math.sin(tNow * 3.8 + x * 0.01) * 3.2 : 0;
+      const headTilt = rigEnabled ? Math.sin(tNow * 2.4 + x * 0.02) * 0.055 : 0;
+      const isBlinking = rigEnabled && ((tNow * 1.15 + (x % 7) * 0.3) % 3.6) < 0.13;
+      const voiceAmp = rigEnabled && isPlaying ? getVoiceAmplitudeAtTime(tNow) : (rigEnabled ? Math.abs(Math.sin(tNow * 12)) * 0.45 : 0);
+
+      // Role-specific dynamic hand gestures when Rig2D is active
+      let dynArmL = [armL[0], armL[1]];
+      let dynArmR = [armR[0], armR[1]];
+      if (rigEnabled) {
+        if (role === 'lawyer') {
+          dynArmR = [armR[0] + Math.sin(tNow * 6.5) * 14, armR[1] - Math.abs(Math.cos(tNow * 6.5)) * 22];
+        } else if (role === 'judge') {
+          dynArmL = [armL[0], armL[1] + Math.sin(tNow * 7.0) * 16];
+        } else if (role === 'detective' || role === 'police') {
+          dynArmR = [armR[0] + Math.cos(tNow * 4.5) * 8, armR[1] + Math.sin(tNow * 4.5) * 10];
+        } else if (mood === 'stern' || mood === 'happy') {
+          dynArmR = [armR[0], armR[1] + Math.sin(tNow * 5.2) * 12];
+        }
+      }
+
+      ctx.save();
+      ctx.translate(x, yGround);
+      ctx.scale(scale, scale);
+      ctx.globalAlpha = alpha;
+
+      // Ground Contact Shadow
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.38)';
+      ctx.beginPath();
+      ctx.ellipse(0, 4, 42, 9, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      const headR = 36;
+      const legH = 95;
+      const torsoH = 120;
+      const hipY = -legH + breathOffset * 0.35;
+      const shoulderY = hipY - torsoH + 22 + breathOffset;
+      const neckY = hipY - torsoH + breathOffset;
+      const headCy = neckY - headR - 4;
+
+      if (glowHeart) {
+        const grad = ctx.createRadialGradient(0, shoulderY + 35, 5, 0, shoulderY + 35, 135);
+        grad.addColorStop(0, 'rgba(245, 166, 35, 0.48)');
+        grad.addColorStop(1, 'rgba(245, 166, 35, 0)');
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.arc(0, shoulderY + 35, 135, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.strokeStyle = C_WHITE;
+      ctx.fillStyle = C_WHITE;
+      ctx.lineWidth = 4.8;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+
+      // Head Group with Subtle Natural Tilt
+      ctx.save();
+      ctx.translate(0, neckY);
+      ctx.rotate(headTilt);
+      ctx.translate(0, -neckY);
+
+      ctx.beginPath();
+      ctx.arc(0, headCy, headR, 0, Math.PI * 2);
+      ctx.stroke();
+
+      if (female) {
+        ctx.beginPath();
+        ctx.arc(0, headCy, headR + 7, -Math.PI * 0.85, -Math.PI * 0.15);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(-headR - 5, headCy - 5);
+        ctx.bezierCurveTo(-headR - 14, headCy + 25, -headR - 8, headCy + 45, -headR + 2, headCy + 52);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(headR + 5, headCy - 5);
+        ctx.bezierCurveTo(headR + 14, headCy + 25, headR + 8, headCy + 45, headR - 2, headCy + 52);
+        ctx.stroke();
+      }
+
+      // Eyes (with natural blinking)
+      const eyeXOffset = mood !== 'left' ? 4 : -5;
+      if (isBlinking) {
+        ctx.lineWidth = 3.2;
+        ctx.beginPath();
+        ctx.moveTo(-15 + eyeXOffset, headCy - 6);
+        ctx.lineTo(-7 + eyeXOffset, headCy - 6);
+        ctx.moveTo(7 + eyeXOffset, headCy - 6);
+        ctx.lineTo(15 + eyeXOffset, headCy - 6);
+        ctx.stroke();
+      } else {
+        ctx.beginPath();
+        ctx.arc(-11 + eyeXOffset, headCy - 6, 3.3, 0, Math.PI * 2);
+        ctx.arc(11 + eyeXOffset, headCy - 6, 3.3, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Mouth & Brows (with Lip-Sync support)
+      ctx.lineWidth = 3.8;
+      if (rigEnabled && voiceAmp > 0.18 && role !== 'handcuffed') {
+        const openH = 4 + voiceAmp * 11;
+        const openW = 9 + voiceAmp * 4;
+        ctx.fillStyle = mood === 'stern' ? C_RED : C_GOLD;
+        ctx.beginPath();
+        ctx.ellipse(eyeXOffset, headCy + 11, openW, openH, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = C_WHITE;
+        ctx.stroke();
+        ctx.fillStyle = C_WHITE;
+      } else if (mood === 'smile' || mood === 'happy') {
+        ctx.beginPath();
+        ctx.arc(eyeXOffset, headCy + 4, 13, 0.15 * Math.PI, 0.85 * Math.PI);
+        ctx.stroke();
+      } else if (mood === 'sad') {
+        ctx.beginPath();
+        ctx.arc(eyeXOffset, headCy + 18, 12, 1.15 * Math.PI, 1.85 * Math.PI);
+        ctx.stroke();
+      } else if (mood === 'stern') {
+        ctx.beginPath();
+        ctx.moveTo(-10 + eyeXOffset, headCy + 12);
+        ctx.lineTo(10 + eyeXOffset, headCy + 12);
+        ctx.stroke();
+      }
+
+      if (mood === 'stern') {
+        ctx.beginPath();
+        ctx.moveTo(-16 + eyeXOffset, headCy - 16);
+        ctx.lineTo(-6 + eyeXOffset, headCy - 12);
+        ctx.moveTo(16 + eyeXOffset, headCy - 16);
+        ctx.lineTo(6 + eyeXOffset, headCy - 12);
+        ctx.stroke();
+      }
+      ctx.restore(); // End Head Tilt Group
+
+      // Torso
+      ctx.lineWidth = 4.8;
+      ctx.beginPath();
+      if (female) {
+        ctx.moveTo(0, neckY);
+        ctx.lineTo(-26, hipY + 10);
+        ctx.lineTo(26, hipY + 10);
+        ctx.closePath();
+      } else {
+        ctx.moveTo(0, neckY);
+        ctx.lineTo(0, hipY);
+      }
+      ctx.stroke();
+
+      // 2-Segment Articulated Legs (Hip -> Knee -> Foot)
+      const legSwing = walkPhase !== 0 ? Math.sin(walkPhase) * 22 : 0;
+      const legLiftL = walkPhase !== 0 ? Math.max(0, Math.cos(walkPhase)) * 14 : 0;
+      const legLiftR = walkPhase !== 0 ? Math.max(0, -Math.cos(walkPhase)) * 14 : 0;
+      const hipOriginY = female ? hipY + 10 : hipY;
+      const leftHipX = female ? -10 : 0;
+      const rightHipX = female ? 10 : 0;
+
+      const legIK_L = solveTwoBoneIK(leftHipX, hipOriginY, -26 + legSwing, -legLiftL, 50, 50, -1);
+      const legIK_R = solveTwoBoneIK(rightHipX, hipOriginY, 26 - legSwing, -legLiftR, 50, 50, 1);
+
+      ctx.beginPath();
+      ctx.moveTo(leftHipX, hipOriginY);
+      ctx.lineTo(legIK_L.midX, legIK_L.midY);
+      ctx.lineTo(legIK_L.endX, legIK_L.endY);
+      ctx.moveTo(rightHipX, hipOriginY);
+      ctx.lineTo(legIK_R.midX, legIK_R.midY);
+      ctx.lineTo(legIK_R.endX, legIK_R.endY);
+      ctx.stroke();
+
+      // 2-Segment Articulated Arms (Shoulder -> Elbow -> Hand)
+      const armIK_L = solveTwoBoneIK(0, shoulderY, dynArmL[0], shoulderY + dynArmL[1], 46, 46, -1);
+      const armIK_R = solveTwoBoneIK(0, shoulderY, dynArmR[0], shoulderY + dynArmR[1], 46, 46, 1);
+
+      ctx.beginPath();
+      ctx.moveTo(0, shoulderY);
+      ctx.lineTo(armIK_L.midX, armIK_L.midY);
+      ctx.lineTo(armIK_L.endX, armIK_L.endY);
+      ctx.moveTo(0, shoulderY);
+      ctx.lineTo(armIK_R.midX, armIK_R.midY);
+      ctx.lineTo(armIK_R.endX, armIK_R.endY);
+      ctx.stroke();
+
+      // Joint Articulation Nodes (Subtle Elbow/Hand/Knee Polish)
+      if (rigEnabled) {
+        ctx.fillStyle = C_WHITE;
+        for (const pt of [
+          [armIK_L.endX, armIK_L.endY],
+          [armIK_R.endX, armIK_R.endY]
+        ]) {
+          ctx.beginPath();
+          ctx.arc(pt[0], pt[1], 4.2, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      if (glowHeart) {
+        const hx = 0;
+        const hy = shoulderY + 35;
+        ctx.fillStyle = C_GOLD;
+        ctx.beginPath();
+        ctx.moveTo(hx, hy + 14);
+        ctx.bezierCurveTo(hx - 22, hy - 2, hx - 12, hy - 18, hx, hy - 6);
+        ctx.bezierCurveTo(hx + 12, hy - 18, hx + 22, hy - 2, hx, hy + 14);
+        ctx.fill();
+      }
+
+      // Special Role Accessories (Detective, Police Officer, Lawyer Robe, Judge Sash, Handcuffs)
+      if (role === 'detective') {
+        ctx.fillStyle = '#09090d';
+        ctx.strokeStyle = C_GOLD;
+        ctx.lineWidth = 3.2;
+        drawRoundedRect(ctx, -26, headCy - 16, 22, 13, 3);
+        ctx.fill();
+        ctx.stroke();
+        drawRoundedRect(ctx, 4, headCy - 16, 22, 13, 3);
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(-4, headCy - 10);
+        ctx.lineTo(4, headCy - 10);
+        ctx.stroke();
+        ctx.fillStyle = C_GOLD;
+        ctx.beginPath();
+        ctx.arc(16, shoulderY + 25, 9, 0, Math.PI * 2);
+        ctx.fill();
+      } else if (role === 'police') {
+        ctx.fillStyle = '#1e293b';
+        ctx.strokeStyle = C_GOLD;
+        ctx.lineWidth = 3.8;
+        drawRoundedRect(ctx, -38, headCy - headR - 18, 76, 20, 6);
+        ctx.fill();
+        ctx.stroke();
+        ctx.fillStyle = C_GOLD;
+        ctx.beginPath();
+        ctx.arc(0, headCy - headR - 8, 5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = C_GOLD;
+        ctx.beginPath();
+        ctx.moveTo(-25, shoulderY - 4);
+        ctx.lineTo(-8, shoulderY - 4);
+        ctx.moveTo(8, shoulderY - 4);
+        ctx.lineTo(25, shoulderY - 4);
+        ctx.stroke();
+      } else if (role === 'lawyer') {
+        ctx.strokeStyle = C_GOLD;
+        ctx.lineWidth = 3.5;
+        ctx.beginPath();
+        ctx.moveTo(0, neckY + 4);
+        ctx.lineTo(-34, hipY + 8);
+        ctx.lineTo(34, hipY + 8);
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fillStyle = C_WHITE;
+        ctx.fillRect(-9, neckY + 4, 7, 22);
+        ctx.fillRect(2, neckY + 4, 7, 22);
+      } else if (role === 'judge') {
+        ctx.strokeStyle = C_GREEN;
+        ctx.lineWidth = 8;
+        ctx.beginPath();
+        ctx.moveTo(-22, shoulderY + 2);
+        ctx.lineTo(22, hipY - 12);
+        ctx.stroke();
+        ctx.strokeStyle = C_GOLD;
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(-22, shoulderY + 2);
+        ctx.lineTo(22, hipY - 12);
+        ctx.stroke();
+      } else if (role === 'handcuffed') {
+        ctx.strokeStyle = C_RED;
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.arc(armIK_L.endX, armIK_L.endY, 11, 0, Math.PI * 2);
+        ctx.arc(armIK_R.endX, armIK_R.endY, 11, 0, Math.PI * 2);
+        ctx.moveTo(armIK_L.endX + 10, armIK_L.endY);
+        ctx.lineTo(armIK_R.endX - 10, armIK_R.endY);
+        ctx.stroke();
+      }
+
+      ctx.restore();
+    }
+
+    /**
+     * FX2D Atmospheric Floating Studio Particles
+     */
+    function drawStudioAtmosphericParticles(ctx, W, H, tSec) {
+      ctx.save();
+      for (let i = 0; i < 18; i++) {
+        const seed = i * 73.19;
+        const px = ((seed * 19.3 + tSec * (12 + (i % 5) * 4)) % (W - 120)) + 60;
+        const py = ((seed * 41.7 - tSec * (18 + (i % 4) * 6)) % (H - 300) + (H - 300)) % (H - 300) + 120;
+        const r = 2.0 + (i % 3) * 1.4;
+        const alpha = 0.12 + Math.sin(tSec * 2.5 + i) * 0.08;
+        ctx.fillStyle = i % 3 === 0 ? `rgba(242, 85, 90, ${alpha})` : `rgba(245, 166, 35, ${alpha})`;
+        ctx.beginPath();
+        ctx.arc(px, py, r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.restore();
+    }
+
+    /**
+     * UI2D Interactive Official Court Stamp & Impact Dust Burst
+     */
+    const COURT_STAMP_SCENES = {
+      s10_egyptian_law:    { title: 'القانون المصري', sub: 'لا جريمة ولا عقوبة إلا بنص', color: C_GOLD },
+      s12_prison_or_fine:  { title: 'عقوبة الحبس', sub: 'جنحة امتناع عمدي', color: C_RED },
+      s13_repeat_offense:  { title: 'تشديد العقوبة', sub: 'في حالة العود', color: C_RED },
+      s14_one_year_prison: { title: 'حبس سنة كاملة', sub: 'حكم قضائي رادع', color: C_RED },
+      s20_hide_docs:       { title: 'حجب المستندات', sub: 'جريمة معاقب عليها', color: C_RED },
+      s21_victory_justice: { title: 'حُكِمَ بِالْحَقِّ', sub: 'تمكين الوارث من نصيبه', color: C_GREEN },
+      s24_detective_arrest:{ title: 'أمر ضبط وإحضار', sub: 'مباحث تنفيذ الأحكام', color: C_RED },
+      s26_judge_and_lawyer:{ title: 'محكمة الجنايات', sub: 'حكم واجب النفاذ', color: C_GOLD },
+      s31_bounced_check_bank: { title: 'جنحة شيك / إيصال', sub: 'عقوبة الحبس والغرامة', color: C_RED }
+    };
+
+    function drawCourtStampOverlay(ctx, sType, localT, cx = 245, cy = 365) {
+      const stampEnabled = document.getElementById('chkCourtStamp')?.checked ?? true;
+      if (!stampEnabled) return;
+      const meta = COURT_STAMP_SCENES[sType];
+      if (!meta) return;
+
+      const slamStart = 0.32;
+      if (localT < slamStart) return;
+      const slamT = Math.min(1, (localT - slamStart) / 0.22);
+      const scale = slamT < 1 ? 2.4 - 1.4 * easeOutCubic(slamT) : 1.0;
+      const alpha = Math.min(0.92, slamT * 1.3);
+
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(-0.18);
+      ctx.scale(scale, scale);
+      ctx.globalAlpha = alpha;
+
+      // Impact Shockwave Ring on Slam
+      if (localT - slamStart < 0.45) {
+        const ringProg = (localT - slamStart) / 0.45;
+        ctx.strokeStyle = meta.color;
+        ctx.lineWidth = 4 * (1 - ringProg);
+        ctx.beginPath();
+        ctx.arc(0, 0, 110 + ringProg * 95, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      // Double Official Stamp Border
+      ctx.fillStyle = 'rgba(9, 9, 14, 0.86)';
+      ctx.strokeStyle = meta.color;
+      ctx.lineWidth = 5.5;
+      drawRoundedRect(ctx, -135, -62, 270, 124, 18);
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.lineWidth = 2.2;
+      drawRoundedRect(ctx, -123, -50, 246, 100, 12);
+      ctx.stroke();
+
+      ctx.fillStyle = meta.color;
+      ctx.font = '900 30px "Cairo", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(meta.title, 0, -12);
+
+      ctx.fillStyle = C_WHITE;
+      ctx.font = '700 20px "Cairo", sans-serif';
+      ctx.fillText(meta.sub, 0, 24);
+      ctx.restore();
+    }
+
+    /**
+     * Interactive 2.5D Legal Stage Sets (`scenes/sets/` from aitrends-2d-studio):
+     * Renders Courtroom Stage, Law Office Stage, or Police Checkpoint Stage behind the characters.
+     */
+    function resolveEffectiveStageSet(studioMode, sType) {
+      if (studioMode !== 'auto_scene_set') return studioMode;
+      const policeScenes = new Set([
+        's23_police_car_siren', 's24_detective_arrest', 's25_police_station',
+        's27_people_fight_dispute', 's28_suspect_escape_chase', 's29_cyber_phone_blackmail'
+      ]);
+      const courtScenes = new Set([
+        's10_egyptian_law', 's12_prison_or_fine', 's13_repeat_offense',
+        's14_one_year_prison', 's18_go_to_court', 's21_victory_justice', 's26_judge_and_lawyer'
+      ]);
+      if (policeScenes.has(sType)) return 'police_checkpoint_stage';
+      if (courtScenes.has(sType)) return 'courtroom_stage';
+      return 'law_office_stage';
+    }
+
+    function drawLegalStageSet2D(ctx, stageType, W, H, GROUND_Y, tSec) {
+      ctx.save();
+      if (stageType === 'courtroom_stage') {
+        // 1. Marble Pillars & Classic Courtroom Wainscoting
+        ctx.strokeStyle = 'rgba(245, 166, 35, 0.16)';
+        ctx.lineWidth = 3;
+        for (const px of [135, 945]) {
+          drawRoundedRect(ctx, px - 28, 180, 56, GROUND_Y - 180, 8);
+          ctx.stroke();
+        }
+        // 2. Elevated Judicial Emblem Banner ("العدل أساس الملك")
+        ctx.fillStyle = 'rgba(20, 16, 12, 0.78)';
+        ctx.strokeStyle = 'rgba(245, 166, 35, 0.45)';
+        ctx.lineWidth = 3;
+        drawRoundedRect(ctx, W / 2 - 210, 165, 420, 66, 16);
+        ctx.fill();
+        ctx.stroke();
+        ctx.fillStyle = C_GOLD;
+        ctx.font = '800 25px "Amiri", "Cairo", sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('⚖️ العَدْلُ أَسَاسُ المُلْكِ ⚖️', W / 2, 198);
+
+        // 3. Defendant Iron Cage Silhouette on Far Left Background
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.11)';
+        ctx.lineWidth = 2.5;
+        drawRoundedRect(ctx, 175, GROUND_Y - 310, 150, 310, 6);
+        ctx.stroke();
+        for (let bx = 200; bx <= 300; bx += 25) {
+          ctx.beginPath();
+          ctx.moveTo(bx, GROUND_Y - 310);
+          ctx.lineTo(bx, GROUND_Y);
+          ctx.stroke();
+        }
+
+        // 4. Mahogany Judicial Bench & Advocate Podium Silhouette at Ground Level
+        ctx.fillStyle = 'rgba(42, 26, 16, 0.55)';
+        ctx.strokeStyle = 'rgba(245, 166, 35, 0.28)';
+        ctx.lineWidth = 2.5;
+        drawRoundedRect(ctx, 640, GROUND_Y - 115, 250, 115, 10);
+        ctx.fill();
+        ctx.stroke();
+      } else if (stageType === 'law_office_stage') {
+        // 1. Law Encyclopedia Bookshelves ("موسوعة القوانين والأحكام")
+        ctx.strokeStyle = 'rgba(245, 166, 35, 0.16)';
+        ctx.lineWidth = 2.5;
+        drawRoundedRect(ctx, 140, 210, 800, 420, 14);
+        ctx.stroke();
+        for (let sy = 315; sy <= 525; sy += 105) {
+          ctx.beginPath();
+          ctx.moveTo(140, sy);
+          ctx.lineTo(940, sy);
+          ctx.stroke();
+          // Book spines
+          for (let bx = 165; bx < 900; bx += 38) {
+            ctx.fillStyle = bx % 76 === 0 ? 'rgba(245, 166, 35, 0.12)' : 'rgba(255, 255, 255, 0.06)';
+            ctx.fillRect(bx, sy - 82, 24, 80);
+          }
+        }
+        // 2. Classic Green Banker's Desk Lamp Glow on Right Desk
+        const lampGlow = ctx.createRadialGradient(820, GROUND_Y - 130, 8, 820, GROUND_Y - 130, 170);
+        lampGlow.addColorStop(0, 'rgba(75, 210, 140, 0.26)');
+        lampGlow.addColorStop(1, 'rgba(75, 210, 140, 0)');
+        ctx.fillStyle = lampGlow;
+        ctx.beginPath();
+        ctx.arc(820, GROUND_Y - 130, 170, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = '#10b981';
+        ctx.beginPath();
+        ctx.arc(820, GROUND_Y - 140, 28, Math.PI, 0);
+        ctx.fill();
+        ctx.strokeStyle = C_GOLD;
+        ctx.lineWidth = 3.5;
+        ctx.beginPath();
+        ctx.moveTo(820, GROUND_Y - 140);
+        ctx.lineTo(820, GROUND_Y);
+        ctx.stroke();
+      } else if (stageType === 'police_checkpoint_stage') {
+        // 1. Cyber/Mabahith Radar Grid & Security Header
+        ctx.strokeStyle = 'rgba(56, 189, 248, 0.12)';
+        ctx.lineWidth = 1.8;
+        for (let gx = 160; gx <= 920; gx += 95) {
+          ctx.beginPath();
+          ctx.moveTo(gx, 190);
+          ctx.lineTo(gx, 620);
+          ctx.stroke();
+        }
+        for (let gy = 190; gy <= 620; gy += 86) {
+          ctx.beginPath();
+          ctx.moveTo(160, gy);
+          ctx.lineTo(920, gy);
+          ctx.stroke();
+        }
+        // 2. Security Checkpoint Barrier Stripes near Ground
+        ctx.fillStyle = 'rgba(15, 23, 42, 0.85)';
+        ctx.strokeStyle = 'rgba(242, 85, 90, 0.45)';
+        ctx.lineWidth = 3;
+        drawRoundedRect(ctx, 150, GROUND_Y - 46, 780, 24, 8);
+        ctx.fill();
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    /**
+     * Helper to draw Speaker Video in Aspect-Ratio Cover Mode (Prevents stretched faces)
+     */
+    function drawVideoCover(ctx, vid, x, y, w, h) {
+      const vw = vid.videoWidth || w;
+      const vh = vid.videoHeight || h;
+      const scale = Math.max(w / vw, h / vh);
+      const sw = w / scale;
+      const sh = h / scale;
+      const sx = (vw - sw) / 2;
+      const sy = (vh - sh) / 2;
+      ctx.drawImage(vid, sx, sy, sw, sh, x, y, w, h);
+    }
+    function renderReelFrame(tSec) {
+      const W = 1080;
+      const H = 1920;
+      const GROUND_Y = 1050;
+
+      // Find active scene first so auto stage set knows the current scene type
+      let activeScene = scenes[0];
+      let activeIdx = 0;
+      for (let i = 0; i < scenes.length; i++) {
+        if (tSec >= scenes[i].start && tSec <= scenes[i].end) {
+          activeScene = scenes[i];
+          activeIdx = i;
+          break;
+        }
+      }
+      if (tSec > scenes[scenes.length - 1]?.end) {
+        activeScene = scenes[scenes.length - 1];
+        activeIdx = scenes.length - 1;
+      }
+      if (!activeScene) return;
+
+      // 1. Virtual Studio & Dynamic 2.5D Stage Set Engine
+      const rawStudioMode = document.getElementById('selectVirtualStudio')?.value || 'auto_scene_set';
+      const studioMode = resolveEffectiveStageSet(rawStudioMode, activeScene.type);
+      ctx.fillStyle = '#07070a';
+      ctx.fillRect(0, 0, W, H);
+
+      if (studioMode === 'luxury_office' || studioMode === 'law_office_stage') {
+        const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+        bgGrad.addColorStop(0, '#1b130d');
+        bgGrad.addColorStop(0.55, '#291c12');
+        bgGrad.addColorStop(1, '#0c0907');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+      } else if (studioMode === 'courtroom_stage') {
+        const bgGrad = ctx.createRadialGradient(W / 2, H * 0.38, 40, W / 2, H * 0.45, 820);
+        bgGrad.addColorStop(0, '#231911');
+        bgGrad.addColorStop(0.6, '#140f0c');
+        bgGrad.addColorStop(1, '#060507');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+      } else if (studioMode === 'executive_studio') {
+        const bgGrad = ctx.createRadialGradient(W / 2, H * 0.38, 40, W / 2, H * 0.45, 820);
+        bgGrad.addColorStop(0, '#162436');
+        bgGrad.addColorStop(1, '#060a10');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+      } else if (studioMode === 'city_night') {
+        const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+        bgGrad.addColorStop(0, '#090d1f');
+        bgGrad.addColorStop(0.6, '#141e38');
+        bgGrad.addColorStop(1, '#05070e');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+        ctx.fillStyle = 'rgba(251, 191, 36, 0.16)';
+        for (let bx = 100; bx < 980; bx += 110) {
+          const bh = 180 + ((bx * 37) % 220);
+          ctx.fillRect(bx, GROUND_Y - bh, 70, bh);
+        }
+      } else if (studioMode === 'motion_circles') {
+        const bgGrad = ctx.createRadialGradient(W / 2, H * 0.44, 50, W / 2, H * 0.44, 700);
+        bgGrad.addColorStop(0, '#1a162b');
+        bgGrad.addColorStop(1, '#07070c');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+        ctx.strokeStyle = 'rgba(245, 166, 35, 0.12)';
+        ctx.lineWidth = 3;
+        for (let r = 140; r <= 560; r += 130) {
+          const dynR = r + Math.sin(tSec * 2 + r) * 18;
+          ctx.beginPath();
+          ctx.arc(W / 2, H * 0.42, dynR, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+      } else if (studioMode === 'crimson_alert' || studioMode === 'police_checkpoint_stage') {
+        const flashSide = Math.sin(tSec * 8) > 0;
+        const bgGrad = ctx.createRadialGradient(W / 2, H * 0.42, 40, W / 2, H * 0.42, 720);
+        bgGrad.addColorStop(0, flashSide ? '#2b0d14' : '#0d192b');
+        bgGrad.addColorStop(1, '#050508');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+      } else {
+        const bgGrad = ctx.createRadialGradient(W / 2, H * 0.44, 50, W / 2, H * 0.44, 680);
+        bgGrad.addColorStop(0, '#1e1b16');
+        bgGrad.addColorStop(1, '#050508');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+      }
+
+      // 2. Top Header Badge ("معلومة قانونية ؟")
+      const headerTitle = document.getElementById('inputHeaderTitle').value || 'معلومة قانونية';
+      ctx.save();
+      ctx.fillStyle = C_GOLD;
+      drawRoundedRect(ctx, 645, 76, 42, 34, 7);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.moveTo(655, 110);
+      ctx.lineTo(666, 110);
+      ctx.lineTo(658, 119);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.fillStyle = '#09090d';
+      ctx.font = '900 26px "Cairo", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('؟', 666, 94);
+
+      ctx.fillStyle = C_GRAY;
+      ctx.font = '700 30px "Cairo", sans-serif';
+      ctx.fillText(headerTitle, 510, 94);
+      ctx.restore();
+
+      const dur = Math.max(0.2, activeScene.end - activeScene.start);
+      const localT = Math.max(0, tSec - activeScene.start);
+      const p = Math.min(1, localT / dur);
+      const pop = easeOutBack(Math.min(1, localT / 0.45));
+      const slide = easeOutCubic(Math.min(1, localT / 0.5));
+      const sType = activeScene.type;
+
+      // Ambient Studio Particles (FX2D)
+      drawStudioAtmosphericParticles(ctx, W, H, tSec);
+
+      // 2.5D Dynamic Camera Zoom, Pan & Impact Shake (FX2D)
+      const camZoomEnabled = document.getElementById('chkCameraZoom')?.checked ?? true;
+      const stampShakeEnabled = document.getElementById('chkCourtStamp')?.checked ?? true;
+      const hasAlertWords = (activeScene.line1 + ' ' + activeScene.line2).includes('!');
+      const isDramaticScene = hasAlertWords || Boolean(COURT_STAMP_SCENES[sType]);
+
+      let camZoom = 1.0;
+      let camShakeX = 0;
+      let camShakeY = 0;
+
+      if (camZoomEnabled && sType !== 's22_outro_cta') {
+        const targetZoom = isDramaticScene ? 1.09 : 1.03;
+        camZoom = 1.0 + (targetZoom - 1.0) * Math.sin(p * Math.PI * 0.85);
+      }
+
+      if (stampShakeEnabled && COURT_STAMP_SCENES[sType] && localT >= 0.32 && localT <= 0.54) {
+        const decay = 1 - (localT - 0.32) / 0.22;
+        camShakeX = Math.sin(localT * 140) * 12 * decay;
+        camShakeY = Math.cos(localT * 165) * 10 * decay;
+      }
+
+      ctx.save();
+      ctx.translate(W / 2 + camShakeX, GROUND_Y - 180 + camShakeY);
+      ctx.scale(camZoom, camZoom);
+      ctx.translate(-W / 2, -(GROUND_Y - 180));
+
+      // Draw 2.5D Interactive Stage Set Architecture behind characters
+      if (sType !== 's22_outro_cta') {
+        drawLegalStageSet2D(ctx, studioMode, W, H, GROUND_Y, tSec);
+      }
+
+      // Ground Line (except on Outro CTA)
+      if (sType !== 's22_outro_cta') {
+<!-- ... existing code ... -->
+      // Draw Floating Animated Emojis for the Scene
+      const chosenEmoji = activeScene.emoji !== undefined ? activeScene.emoji : metaDefaults.emoji;
+      if (chosenEmoji && sType !== 's22_outro_cta') {
+        const emojiY = chosenCard && chosenCard !== 'none' ? 195 : 290;
+        drawFloatingEmojis(ctx, chosenEmoji, 540, emojiY, tSec, pop);
+      }
+
+      // Draw UI2D Official Court Stamp Overlay on Key Legal/Criminal Scenes
+      drawCourtStampOverlay(ctx, sType, localT, 245, 365);
+
+      ctx.restore(); // End 2.5D Camera Zoom & Shake Transform Group
+
+      // 3B. Optional Speaker Video PIP / Virtual Studio Frame (when user uploaded a video file)
+      const speakerVid = document.getElementById('uploadedSpeakerVideo');
+      const speakerMode = document.getElementById('selectSpeakerVideoMode')?.value || 'split_circle';
+      if (hasUploadedVideoTrack && speakerVid && speakerVid.readyState >= 2 && speakerMode !== 'audio_only' && sType !== 's22_outro_cta') {
+        ctx.save();
+        if (speakerMode === 'split_circle') {
+          const r = 165;
+          const cxVid = 540;
+          const cyVid = 1580;
+          ctx.strokeStyle = C_GOLD;
+          ctx.lineWidth = 6;
+          ctx.beginPath();
+          ctx.arc(cxVid, cyVid, r, 0, Math.PI * 2);
+          ctx.stroke();
+          ctx.clip();
+          drawVideoCover(ctx, speakerVid, cxVid - r, cyVid - r, r * 2, r * 2);
+        } else if (speakerMode === 'split_bottom') {
+          ctx.strokeStyle = C_GOLD;
+          ctx.lineWidth = 5;
+          drawRoundedRect(ctx, 140, 1410, 800, 420, 28);
+          ctx.stroke();
+          ctx.clip();
+          drawVideoCover(ctx, speakerVid, 140, 1410, 800, 420);
+        } else if (speakerMode === 'full_studio') {
+          ctx.strokeStyle = C_GOLD;
+          ctx.lineWidth = 6;
+          drawRoundedRect(ctx, 90, 220, 900, 920, 34);
+          ctx.stroke();
+          ctx.clip();
+          drawVideoCover(ctx, speakerVid, 90, 220, 900, 920);
+        }
+        ctx.restore();
+      }
